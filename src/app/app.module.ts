@@ -6,6 +6,9 @@ import { OgrodjeComponent } from './ogrodje/ogrodje.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutComponent } from './about/about.component';
+import { Router, RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
 
 @NgModule({
   declarations: [
@@ -13,12 +16,28 @@ import { AboutComponent } from './about/about.component';
     OgrodjeComponent,
     LandingPageComponent,
     PortfolioComponent,
-    AboutComponent
+    AboutComponent,
+    PageNotFoundComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      {
+        path: '',
+        component: LandingPageComponent
+      }, {
+        path: 'portfolio',
+        component: PortfolioComponent
+      }, {
+        path: 'about',
+        component: AboutComponent
+      }, {
+        path: '**',
+        component: PageNotFoundComponent
+      }
+    ])
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [OgrodjeComponent]
 })
 export class AppModule { }

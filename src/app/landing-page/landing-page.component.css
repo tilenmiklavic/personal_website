@@ -1,0 +1,12 @@
+.container-fluid .row {
+  height: 100vh;
+}
+
+.blok {
+  position: absolute;
+  bottom: 1em;
+}
+
+a {
+  color: inherit;
+}
