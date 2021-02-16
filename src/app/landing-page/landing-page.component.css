@@ -1,12 +1,13 @@
-.container-fluid .row {
-  height: 100vh;
+.title {
+  margin-top: 50px;
+  font-size: 25em;
 }
 
-.blok {
-  position: absolute;
-  bottom: 1em;
+.subtitle {
+  margin-left: 5em;
 }
 
 a {
+  text-decoration: none;
   color: inherit;
 }
