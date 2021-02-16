@@ -1,3 +1,10 @@
+<nav>
+  <div class="navigation">
+    <a href="/portfolio" (mouseover)="monkeReveal(1)" (mouseout)="monkeHide()">{{navFirst}}</a>
+    <a href="/about" (mouseover)="monkeReveal(2)" (mouseout)="monkeHide()">{{navSecond}}</a>
+  </div>
+
+</nav>
 <div class="d-flex justify-content-center container main">
   <div class="row">
     <div class="col">
@@ -5,7 +12,7 @@
         Hello
       </div>
       <div class="subtitle">
-        I'm Tilen, my interest is mostly picked by <a href="https://github.com/tilenmiklavic"><i class="fas fa-laptop-code"></i></a> and <a href="https://www.instagram.com/tilen_miklavic/"><i class="fas fa-camera-retro"></i></a>
+        I'm Tilen <img src="../../assets/icons/waving-hand.svg" class="icon">, my interest is mostly picked by <a href="https://github.com/tilenmiklavic"><i class="fas fa-laptop-code"></i></a> and <a href="https://www.instagram.com/tilen_miklavic/"><i class="fas fa-camera-retro"></i></a>
       </div>
     </div>
   </div>
