@@ -1,1 +1,34 @@
-<p>portfolio works!</p>
+<div>
+  <div class="header container">
+    <div class="row">
+      <div class="title col container d-flex justify-content-center">
+        My Portfolio
+      </div>
+    </div>
+    <div class="row">
+      <div class="subtitle col container d-flex justify-content-center">
+        most up to date probably on&nbsp;<a href="https://www.instagram.com/tilen_miklavic/"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div *ngFor="let image of this.firstColumn">
+          <img src={{image}} alt="portfolio picture" class="image col-12">
+        </div>
+      </div>
+      <div class="col-4">
+        <div *ngFor="let image of this.secondColumn" class="imageContainer">
+          <img src={{image}} alt="portfolio picture" class="image col-12">
+        </div>
+      </div>
+      <div class="col-4">
+        <div *ngFor="let image of this.thirdColumn">
+          <img src={{image}} alt="portfolio picture" class="image col-12">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

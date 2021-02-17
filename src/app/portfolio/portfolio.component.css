@@ -1,0 +1,22 @@
+.image {
+  width: inherit;
+  margin: 1em 0em 1em;
+}
+
+.header {
+  padding: 40px;
+}
+
+.title {
+  font-size: 90px;
+}
+
+.subtitle {
+  font-size: large;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

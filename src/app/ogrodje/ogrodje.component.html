@@ -1,3 +1,9 @@
 <main>
+  <nav>
+    <div class="navigation">
+      <a href="/portfolio" (mouseover)="monkeReveal(1)" (mouseout)="monkeHide()">{{navFirst}}</a>
+      <a href="/about" (mouseover)="monkeReveal(2)" (mouseout)="monkeHide()">{{navSecond}}</a>
+    </div>
+  </nav>
   <router-outlet></router-outlet>
 </main>
