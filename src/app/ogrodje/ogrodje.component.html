@@ -1,9 +1,22 @@
 <main>
   <nav>
+    <div class="logo">
+      <a href="/">MONKÉ</a>
+    </div>
     <div class="navigation">
       <a href="/portfolio" (mouseover)="monkeReveal(1)" (mouseout)="monkeHide()">{{navFirst}}</a>
       <a href="/about" (mouseover)="monkeReveal(2)" (mouseout)="monkeHide()">{{navSecond}}</a>
     </div>
   </nav>
   <router-outlet></router-outlet>
+
+  <footer class="bg-light text-center text-lg-start footer">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2021 Copyright:
+      <a class="text-dark" href="/">Tilen Miklavič</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
 </main>

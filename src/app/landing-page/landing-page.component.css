@@ -16,16 +16,14 @@ a {
   width: 30px;
 }
 
-nav {
-  margin-top: 1em;
-  width: 100%;
-  height: 2em;
-}
+@media (max-width: 767px) {
+  /* CSS goes here */
+  .title {
+    font-size: 8em;
+    margin-top: 1em;
+  }
 
-.navigation {
-  float: right;
-}
-
-.navigation > a {
-  margin-right: 2em;
+  .subtitle {
+    margin: 0;
+  }
 }

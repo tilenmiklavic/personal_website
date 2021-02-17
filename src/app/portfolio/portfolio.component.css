@@ -20,3 +20,15 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+@media (max-width: 767px) {
+  /* CSS goes here */
+  .title {
+    font-size: 2.8em;
+  }
+
+  .subtitle {
+    margin: 0;
+    font-size:medium;
+  }
+}
