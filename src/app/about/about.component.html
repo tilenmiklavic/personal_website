@@ -26,4 +26,19 @@
       </div>
     </dir>
   </dir>
+  <dir class="row skills">
+    <dir class="col-sm">
+      <dir class="imageContainer">
+        <img src="../../assets/images/avatar_programming.png" alt="avatar programming" class="avatarProgrammingImage">
+      </dir>
+    </dir>
+    <dir class="col-sm">
+      <div class="competence">
+        <h5>What I can (non) professionaly somehow do</h5>
+      </div>
+      <div class="competences">
+        <div *ngFor="let skill of this.skills" class="skill">{{ skill }}</div>
+      </div>
+    </dir>
+  </dir>
 </dir>

@@ -23,8 +23,31 @@ a {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.avatarProgrammingImage {
+  width: 400px;
+}
+
 .content {
   padding-top: 4em;
+}
+
+.skills {
+  margin-top: 5em;
+}
+
+.competence {
+  margin-bottom: 2em;
+}
+
+.skill {
+  border-radius: 5px;
+  padding: 3px 6px 3px 6px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  display: inline-block;
+  color: white;
+  background-color:#74BADF;
+  font-size: 0.75em;
 }
 
 @media (max-width: 767px) {
@@ -33,7 +56,7 @@ a {
     padding-top: 2em;
   }
 
-  .ime, .opis, .email, .school {
+  .ime, .opis, .email, .school, .skills {
     padding-left: 0px;
   }
 
@@ -43,5 +66,13 @@ a {
 
   .podatki {
     padding-left: 0;
+  }
+
+  .avatarProgrammingImage {
+    width: 300px;
+  }
+
+  .competence, .competences {
+    margin-left: 1em;
   }
 }

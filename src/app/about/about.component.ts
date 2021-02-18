@@ -12,4 +12,6 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  skills = ["html", "css", "JavaScript", "Angular", "NodeJS", "Java", "Python"];
+
 }
