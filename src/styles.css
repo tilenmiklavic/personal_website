@@ -4,6 +4,10 @@ body {
   padding-bottom: 20em;
 }
 
+html * {
+  font-family: 'Roboto Mono', monospace;
+}
+
 html {
   position: relative;
   min-height: 100%;
