@@ -10,6 +10,7 @@ export class OgrodjeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.setTheme();
   }
 
   navFirst: string = "UGA";
@@ -28,4 +29,24 @@ export class OgrodjeComponent implements OnInit {
     this.navSecond = "BUGA";
   }
 
+  toggleTheme(): void {
+    if (!localStorage.getItem("theme")) {
+      localStorage.setItem("theme", "dark");
+    } else {
+      if (localStorage.getItem("theme") == "dark") {
+        localStorage.setItem("theme", "light")
+      } else {
+        localStorage.setItem("theme", "dark")
+      }
+    }
+
+    this.setTheme();
+  }
+
+  setTheme(): void {
+    console.log(localStorage.getItem("theme"));
+    if (localStorage.getItem("theme") == "dark") {
+      document.body.classList.toggle('dark-theme');
+    }
+  }
 }

@@ -1,14 +1,21 @@
 <main>
   <nav>
-    <div class="logo">
-      <a href="/">MONKÉ</a>
+    <div class="logo row">
+      <div>
+        <a href="/" class="title">MONKÉ</a>
+      </div>
+      <div class="bulb">
+        <i (click)="toggleTheme()" class="fas fa-lightbulb"></i>
+      </div>
     </div>
     <div class="navigation">
       <a href="/portfolio" (mouseover)="monkeReveal(1)" (mouseout)="monkeHide()">{{navFirst}}</a>
       <a href="/about" (mouseover)="monkeReveal(2)" (mouseout)="monkeHide()">{{navSecond}}</a>
     </div>
   </nav>
-  <router-outlet></router-outlet>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
 
   <footer class="bg-light text-center text-lg-start footer">
     <!-- Copyright -->

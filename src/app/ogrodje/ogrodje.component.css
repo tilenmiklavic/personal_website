@@ -21,3 +21,8 @@ a {
   float: left;
   margin-left: 2em;
 }
+
+.bulb {
+  margin-left: 1em;
+  font-size: 1em;
+}

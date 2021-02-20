@@ -4,6 +4,12 @@ body {
   padding-bottom: 20em;
 }
 
+body.dark-theme {
+  color: #eee;
+  background: #121212;
+}
+
+
 html * {
   font-family: 'Roboto Mono', monospace;
 }
