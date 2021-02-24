@@ -38,17 +38,31 @@ a {
 
 .competence {
   margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.competences {
+  font-size: 1.5em;
 }
 
 .skill {
   border-radius: 5px;
-  padding: 3px 6px 3px 6px;
+  padding: 4px 8px 4px 8px;
   margin-right: 1em;
   margin-bottom: 1em;
   display: inline-block;
   color: white;
   background-color:#74BADF;
   font-size: 0.75em;
+}
+
+.skill > img {
+  width: 1em;
+  filter: invert(1);
+}
+
+.skillIcon {
+  margin-left: 0.5em;
 }
 
 @media (max-width: 767px) {

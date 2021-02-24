@@ -37,7 +37,13 @@
         <h5>What I can (non) professionaly somehow do</h5>
       </div>
       <div class="competences">
-        <div *ngFor="let skill of this.skills" class="skill">{{ skill }}</div>
+        <div *ngFor="let skill of this.skills" class="skill">{{ skill.name }} <i class="fab {{skill.icon}}"></i></div>
+      </div>
+      <div class="competence">
+        <h5>other skills</h5>
+      </div>
+      <div class="competences">
+        <div *ngFor="let skill of this.otherSkills" class="skill d-inline-flex">{{ skill.name }} <img src="../../assets/icons/{{skill.icon}}.svg" alt="skill icon" class="skillIcon"></div>
       </div>
     </dir>
   </dir>
