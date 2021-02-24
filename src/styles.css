@@ -1,12 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
 body {
   font-family: 'Roboto Mono', monospace;
   padding-bottom: 20em;
+  --primary-color: #FFFFFF;
+  --secondary-color: #D7D7D7;
+  --avatar-background: #FFFFFF;
 }
 
 body.dark-theme {
   color: #eee;
-  background: #121212;
+  background: #171E24;
+  --primary-color: #171E24;
+  --secondary-color: #2d4052;
+  --avatar-background: #325161;
+}
+
+body.dark-theme  footer {
+  background: var(--secondary-color);
 }
 
 

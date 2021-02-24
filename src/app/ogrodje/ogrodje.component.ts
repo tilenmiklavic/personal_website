@@ -40,7 +40,7 @@ export class OgrodjeComponent implements OnInit {
       }
     }
 
-    this.setTheme();
+    document.body.classList.toggle('dark-theme');
   }
 
   setTheme(): void {

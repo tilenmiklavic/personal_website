@@ -19,8 +19,9 @@ a {
 .avatarImage {
   width: 300px;
   border-radius: 50%;
-  border: 15px solid #D7D7D7;
+  border: 15px solid var(--secondary-color);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: var(--avatar-background);
 }
 
 .avatarProgrammingImage {
