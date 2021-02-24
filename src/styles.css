@@ -6,6 +6,7 @@ body {
   --primary-color: #FFFFFF;
   --secondary-color: #D7D7D7;
   --avatar-background: #FFFFFF;
+  --shadow-color: #929191;
 }
 
 body.dark-theme {
@@ -14,6 +15,7 @@ body.dark-theme {
   --primary-color: #171E24;
   --secondary-color: #2d4052;
   --avatar-background: #325161;
+  --shadow-color: #2e2e2e;
 }
 
 body.dark-theme  footer {

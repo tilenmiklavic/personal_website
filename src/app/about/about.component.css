@@ -54,11 +54,18 @@ a {
   color: white;
   background-color:#74BADF;
   font-size: 0.75em;
+  transition-duration: .3s;
 }
 
 .skill > img {
   width: 1em;
   filter: invert(1);
+}
+
+.skill:hover {
+  transform: scale(1.2);
+  background-color: #1da8f3;
+  box-shadow: 1px 1px 3px 3px var(--shadow-color);
 }
 
 .skillIcon {
