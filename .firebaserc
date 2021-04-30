@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "personal-website-9ae7c"
+  },
+  "targets": {
+    "personal-website-9ae7c": {
+      "hosting": {
+        "PersonalWebsite": [
+          "personal-website-9ae7c"
+        ]
+      }
+    }
+  }
+}

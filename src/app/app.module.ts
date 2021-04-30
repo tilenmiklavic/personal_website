@@ -9,6 +9,10 @@ import { AboutComponent } from './about/about.component';
 import { Router, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AppRouterModule } from './app-router.module';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -22,7 +26,10 @@ import { AppRouterModule } from './app-router.module';
   ],
   imports: [
     BrowserModule,
-    AppRouterModule
+    AppRouterModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAnalyticsModule, 
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [OgrodjeComponent]
